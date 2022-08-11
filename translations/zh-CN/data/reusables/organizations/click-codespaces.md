@@ -1,1 +1,1 @@
-1. In the left sidebar, click **Codespaces**. !["Codespaces" tab in left sidebar](/assets/images/help/organizations/codespaces-sidebar-tab.png)
+1. 在左侧边栏中，单击 **{% octicon "codespaces" aria-label="The codespaces icon" %} Codespaces**。

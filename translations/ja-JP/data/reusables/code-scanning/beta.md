@@ -1,8 +1,12 @@
-{% if currentVersion == "enterprise-server@2.22" %}
+{% ifversion ghae %}
+
+<!-- Remove this reusable and all references for GA release -->
+
+{% elsif ghae %}
 
 {% note %}
 
-**Note:** {% data variables.product.prodname_code_scanning_capc %} is in beta in {% data variables.product.prodname_ghe_server %} 2.22. For the generally available release of code scanning, upgrade to the latest release of {% data variables.product.prodname_ghe_server %}.
+**ノート:** {% data variables.product.prodname_code_scanning_capc %}は現在ベータで、変更されることがあります。
 
 {% endnote %}
 

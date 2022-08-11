@@ -1,7 +1,12 @@
 name: Repo Freeze Check
 
+# **What it does**: Prevent pull requests from merging during freezes.
+# **Why we have it**: Sometimes we need to freeze deployments for various reasons.
+# **Who does it impact**: Anyone working on docs.
+
 on:
   workflow_dispatch:
+  merge_group:
   pull_request_target:
     types:
       - opened
@@ -11,6 +16,9 @@ on:
       - unlocked
     branches:
       - main
+
+permissions:
+  contents: none
 
 env:
   FREEZE: ${{ secrets.FREEZE }}
