@@ -206,7 +206,7 @@ jobs:
         # bots, they have no intention of viewing the deployed preview anyway.
         # This saves time because the PR can merge sooner.
         if: ${{ !github.event.pull_request.auto_merge }}
-        uses: azure/arm-deploy@841b12551939c88af8f6df767c24c38a5620fd0d
+        uses: azure/arm-deploy@a1361c2c2cd398621955b16ca32e01c65ea340f5
         with:
           resourceGroupName: ${{ secrets.PREVIEW_ENV_RESOURCE_GROUP }}
           subscriptionId: ${{ secrets.NONPROD_SUBSCRIPTION_ID }}
